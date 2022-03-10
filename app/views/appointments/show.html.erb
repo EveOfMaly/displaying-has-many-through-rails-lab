@@ -1,0 +1,11 @@
+<h1> Appointment <%= @appointment.id  %> </h1>
+
+<h4>Time </h4>
+<b><%= @appointment.convert_date_format %> </b>
+
+
+<h4>Doctor</h4>
+<%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %>
+
+<h4>Patient</h4>
+<%= link_to @appointment.patient.name, patient_path(@appointment.patient) %>

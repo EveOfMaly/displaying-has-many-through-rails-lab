@@ -1,0 +1,6 @@
+<%= @patient.name %>
+<br>
+<% @patient.appointments.each do |appointment| %>
+    <%= link_to appointment.doctor.name, doctor_path(appointment.doctor.id)  %> -  <%= link_to appointment.convert_date_format %> 
+    <br>
+<% end %>
