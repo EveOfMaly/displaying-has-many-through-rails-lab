@@ -45,4 +45,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'pry'
+
+  gem 'table_print'
+  gem 'awesome_print'
 end
